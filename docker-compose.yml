@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: php/Dockerfile
     container_name: php_container
-    command: bin/sh -c "composer install && php-fpm"
+    command: bash -c "composer install && php-fpm"
     volumes:
       - ./:/var/www/html
     networks:
