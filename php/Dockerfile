@@ -12,3 +12,5 @@ WORKDIR /var/www/html
 
 # Copie l'application dans le conteneur
 COPY . /var/www/html
+
+CMD [ "composer", "install" ]
